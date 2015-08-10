@@ -12,7 +12,12 @@
 
 <p>
   <strong>Sex:</strong>
-  <%= @item.sex %>
+  <%= sexCodeToStr(@item.sex) %>
+</p>
+
+<p>
+  <strong>メモ:</strong>
+  <%= @item.memo %>
 </p>
 
 <%= link_to 'Edit', edit_item_path(@item) %> |
